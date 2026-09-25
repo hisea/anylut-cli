@@ -1,0 +1,10 @@
+{
+  "name": "anylut-agent-skill",
+  "version": "0.1.0",
+  "description": "Agent skill for the anylut photo-editing command-line tool",
+  "keywords": ["pi-package"],
+  "license": "UNLICENSED",
+  "private": true,
+  "pi": { "skills": ["./skills"] },
+  "omp": { "skills": ["./skills"] }
+}

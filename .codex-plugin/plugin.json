@@ -1,0 +1,6 @@
+{
+  "name": "anylut",
+  "description": "Edit and color-grade photos with the anylut command-line tool.",
+  "version": "0.1.0",
+  "skills": "./skills/"
+}

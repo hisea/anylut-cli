@@ -1,0 +1,9 @@
+{
+  "name": "anylut",
+  "description": "Edit and color-grade photos with the anylut command-line tool.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hisea/anylut-cli",
+  "author": { "name": "Yinghai Zhao" },
+  "license": "Proprietary",
+  "keywords": ["photo", "lut", "color-grading", "raw"]
+}

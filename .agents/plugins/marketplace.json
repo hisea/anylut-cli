@@ -1,0 +1,12 @@
+{
+  "name": "anylut",
+  "interface": { "displayName": "AnyLUT" },
+  "plugins": [
+    {
+      "name": "anylut",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

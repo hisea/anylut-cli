@@ -18,6 +18,31 @@ Requires an Apple Silicon Mac running macOS 14 (Sonoma) or later.
 
 Update with `brew upgrade anylut`.
 
+Homebrew asks you to trust non-official taps. The command above names the formula
+in full, which trusts just that one formula. If you `brew tap hisea/anylut` first
+and want to install by the short name, trust it explicitly:
+
+```bash
+brew tap hisea/anylut
+brew trust --formula hisea/anylut/anylut
+brew install anylut
+```
+
+## Use with an agent
+
+The skill `anylut` teaches an agent to run the tool. It tells the agent to run `anylut guide`, so the
+instructions always match the installed version. Install the tool first (see above).
+
+| Agent | Install |
+| --- | --- |
+| Claude Code | `claude plugin marketplace add hisea/anylut-cli` then `claude plugin install anylut@anylut` |
+| Codex | `codex plugin marketplace add hisea/anylut-cli` then `codex plugin add anylut@anylut` |
+| pi | `pi install git:github.com/hisea/anylut-cli` |
+| omp | `omp plugin marketplace add hisea/anylut-cli` then `omp plugin install anylut@anylut` |
+| opencode | `git clone https://github.com/hisea/anylut-cli /tmp/anylut-cli && mkdir -p ~/.config/opencode/skills && cp -R /tmp/anylut-cli/skills/anylut ~/.config/opencode/skills/` |
+
+Any other agent that reads `SKILL.md` can use the folder `skills/anylut/`.
+
 ## Quick start
 
 ```bash
