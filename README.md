@@ -43,6 +43,26 @@ instructions always match the installed version. Install the tool first (see abo
 
 Any other agent that reads `SKILL.md` can use the folder `skills/anylut/`.
 
+## Use as an MCP server
+
+`anylut mcp` runs the tool as an MCP server on stdio. It offers the same commands as tools
+(`anylut_guide`, `anylut_capabilities`, `anylut_inspect`, `anylut_recipe_new`, `anylut_recipe_show`,
+`anylut_patch`, `anylut_lut_set`, `anylut_lut_clear`, `anylut_render_preview`, `anylut_render_export`).
+A preview comes back as an image, so the model can look at each edit. Tools need absolute file paths.
+
+Apps that you start from the Dock do not see your shell `PATH`. Use the full path of the tool
+(`/opt/homebrew/bin/anylut`; run `command -v anylut` to check).
+
+| Client | Setup |
+| --- | --- |
+| Claude Desktop | Add to `claude_desktop_config.json`: `{"mcpServers":{"anylut":{"command":"/opt/homebrew/bin/anylut","args":["mcp"]}}}` |
+| Claude Code | `claude mcp add anylut -- anylut mcp` |
+| Cherry Studio | Settings, MCP Servers, Add. Type `STDIO`. Command `/opt/homebrew/bin/anylut`. Arguments `mcp`. |
+| Codex (GPT) | `codex mcp add anylut -- anylut mcp` |
+
+ChatGPT (web and desktop) connects only to remote MCP servers over HTTPS. It cannot start a local
+program, so use Codex for GPT models.
+
 ## Quick start
 
 ```bash
