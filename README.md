@@ -1,5 +1,7 @@
 # anylut
 
+**English** | [中文文档](README.zh-CN.md)
+
 `anylut` is a command-line tool for editing photos non-destructively, built for
 local agents and scripts. It reads a photo (RAW, JPEG or HEIC), lets you edit a
 small, lossless recipe file, and renders previews or a final JPEG/PNG. The
