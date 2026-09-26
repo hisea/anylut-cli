@@ -10,6 +10,8 @@ original file is never modified.
 This repository hosts the **prebuilt, signed and notarized binaries** for macOS.
 The source is not published here.
 
+[<img src="https://anylut.com/assets/app-store-badge.svg" height="40" alt="Download AnyLUT on the App Store">](https://apps.apple.com/us/app/anylut/id6814290745)&nbsp;&nbsp;[**Learn about the macOS CLI →**](https://anylut.com/cli/)
+
 ## Install
 
 ```bash
@@ -100,8 +102,8 @@ never silently clamped. `anylut --help` lists every command.
   out-of-range values are rejected rather than repaired.
 - Rendering runs entirely on your Mac; nothing is uploaded.
 
-## Limits (v0.1)
+## Limits
 
-Recipes containing crop, rotation, flip or straighten are refused rather than
-rendered without them. RAW support is whatever your macOS version's RAW decoder
+Recipes containing crop, rotation, flip or straighten are rendered as framed, but `patch` cannot set them.
+RAW support is whatever your macOS version's RAW decoder
 supports; run `anylut inspect` on a file to find out.

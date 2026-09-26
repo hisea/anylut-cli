@@ -6,6 +6,8 @@
 
 本仓库存放 macOS 的**预编译、已签名并已公证的二进制文件**，源代码不在这里公开。
 
+[<img src="https://anylut.com/assets/app-store-badge.svg" height="40" alt="在 App Store 下载 AnyLUT">](https://apps.apple.com/us/app/anylut/id6814290745)&nbsp;&nbsp;[**了解 macOS CLI →**](https://anylut.com/cli/)
+
 ## 安装
 
 ```bash
